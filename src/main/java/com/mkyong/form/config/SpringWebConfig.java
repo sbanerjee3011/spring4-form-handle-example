@@ -40,6 +40,7 @@ import com.interceptors.LoggingInterceptor;
 	    public ResourceBundleMessageSource messageSource() {
 		ResourceBundleMessageSource rb = new ResourceBundleMessageSource();
 		rb.setBasenames(new String[] { "messages/messagemvc", "messages/validation" });
+	    rb.setBasenames(new String[] { "messages/messagemvc", "messages/validation" });
 		return rb;
 	}
 	@Override
