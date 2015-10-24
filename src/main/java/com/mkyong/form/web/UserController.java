@@ -34,7 +34,7 @@ import com.mkyong.form.validator.UserFormValidator;
 @Controller
 public class UserController {
 
-	private final Logger logger = LoggerFactory.getLogger(UserController.class);
+	  private final Logger logger = LoggerFactory.getLogger(UserController.class);
 
 	@Autowired
 	UserFormValidator userFormValidator;
