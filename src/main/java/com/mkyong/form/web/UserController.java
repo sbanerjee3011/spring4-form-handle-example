@@ -100,7 +100,7 @@ public class UserController {
 	@RequestMapping(value = "/users/add", method = RequestMethod.GET)
 	public String showAddUserForm(Model model) {
 		logger.debug("Display user form");
-		User user = new User();
+		
 
 		// set default value
 		/*user.setName("mkyong123");
@@ -114,9 +114,10 @@ public class UserController {
 		user.setSkill(new ArrayList<String>(Arrays.asList("Spring", "Grails", "Groovy")));
 		user.setCountry("SG");
 		user.setNumber(2);*/
-
+		User user = new User();
 		model.addAttribute("userForm", user);
 		populateDefaultModel(model);
+		logger.debug("DISPLAY FORM");
 		return "users/userform";
 
 	}
